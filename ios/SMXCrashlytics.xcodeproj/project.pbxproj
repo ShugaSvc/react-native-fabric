@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6463C8551EBA12CB0095B8CD /* SMXAnswers.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A76C01C86A251004ABB23 /* SMXAnswers.m */; };
 		6463C8561EBA12CB0095B8CD /* SMXCrashlytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A76C21C86A251004ABB23 /* SMXCrashlytics.m */; };
-		D87A76C31C86A251004ABB23 /* SMXAnswers.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A76C01C86A251004ABB23 /* SMXAnswers.m */; };
 		D87A76C41C86A251004ABB23 /* SMXCrashlytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A76C21C86A251004ABB23 /* SMXCrashlytics.m */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +34,6 @@
 
 /* Begin PBXFileReference section */
 		6463C84C1EBA12A60095B8CD /* libSMXCrashlytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMXCrashlytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D87A76BF1C86A251004ABB23 /* SMXAnswers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMXAnswers.h; path = SMXCrashlytics/SMXAnswers.h; sourceTree = "<group>"; };
-		D87A76C01C86A251004ABB23 /* SMXAnswers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMXAnswers.m; path = SMXCrashlytics/SMXAnswers.m; sourceTree = "<group>"; };
 		D87A76C11C86A251004ABB23 /* SMXCrashlytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMXCrashlytics.h; path = SMXCrashlytics/SMXCrashlytics.h; sourceTree = "<group>"; };
 		D87A76C21C86A251004ABB23 /* SMXCrashlytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMXCrashlytics.m; path = SMXCrashlytics/SMXCrashlytics.m; sourceTree = "<group>"; };
 		D8D9DB831C6D03DB009FBC0E /* libSMXCrashlytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMXCrashlytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,8 +60,6 @@
 		D8D9DB5B1C6D01F4009FBC0E = {
 			isa = PBXGroup;
 			children = (
-				D87A76BF1C86A251004ABB23 /* SMXAnswers.h */,
-				D87A76C01C86A251004ABB23 /* SMXAnswers.m */,
 				D87A76C11C86A251004ABB23 /* SMXCrashlytics.h */,
 				D87A76C21C86A251004ABB23 /* SMXCrashlytics.m */,
 				D8D9DB661C6D01F4009FBC0E /* Products */,
@@ -159,7 +153,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6463C8551EBA12CB0095B8CD /* SMXAnswers.m in Sources */,
 				6463C8561EBA12CB0095B8CD /* SMXCrashlytics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,7 +162,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D87A76C41C86A251004ABB23 /* SMXCrashlytics.m in Sources */,
-				D87A76C31C86A251004ABB23 /* SMXAnswers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,16 +309,11 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(SRCROOT)/../../../ios/Crashlytics",
-					"$(SRCROOT)/../../../ios/Pods/Crashlytics/iOS",
+					"$(PROJECT_DIR)/../../../ios/Frameworks/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../ios/Pods/Headers/Public/Crashlytics",
-					"$(SRCROOT)/../../../ios/Crashlytics/**",
-					"$(SRCROOT)/../../../ios/**",
+					"$(PROJECT_DIR)/../../../ios/Frameworks/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -339,16 +326,11 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(SRCROOT)/../../../ios/Crashlytics",
-					"$(SRCROOT)/../../../ios/Pods/Crashlytics/iOS",
+					"$(PROJECT_DIR)/../../../ios/Frameworks/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../ios/Pods/Headers/Public/Crashlytics",
-					"$(SRCROOT)/../../../ios/Crashlytics/**",
-					"$(SRCROOT)/../../../ios/**",
+					"$(PROJECT_DIR)/../../../ios/Frameworks/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

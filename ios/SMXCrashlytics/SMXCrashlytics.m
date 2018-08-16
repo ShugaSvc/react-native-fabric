@@ -4,7 +4,7 @@
 @implementation SMXCrashlytics
 @synthesize bridge = _bridge;
 
-NSString *const DefaultDomain = @"com.smixx.fabric.SMXCrashlytics";
+NSString *const DefaultDomain = @"com.shuga.shugaapp.dev";
 NSInteger const DefaultCode = 100;
 
 RCT_EXPORT_MODULE();
@@ -124,20 +124,5 @@ BOOL KWObjCTypeIsUnsignedIntegral(const char *objCType) {
   strcmp(objCType, @encode(unsigned long)) == 0 ||
   strcmp(objCType, @encode(unsigned long long)) == 0;
 }
-
-//RCT_EXPORT_METHOD(setInt:(NSString *)key value:(int)integer)
-//{
-//  [[Crashlytics sharedInstance] setIntValue:integer forKey:key];
-//}
-
-//RCT_EXPORT_METHOD(setFloat:(NSString *)key value:(float)floatValue)
-//{
-//  [[Crashlytics sharedInstance] setFloatValue:floatValue forKey:key];
-//}
-
-//RCT_EXPORT_METHOD(setObject:(NSString *)key value:(NSDictionary *)obj)
-//{
-//  [[Crashlytics sharedInstance] setObjectValue:obj forKey:key];
-//}
 
 @end
